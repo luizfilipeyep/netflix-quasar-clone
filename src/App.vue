@@ -40,7 +40,28 @@
         </div>
     </section>
 
-    <nav class="float"></nav>
+    <nav class="float">
+        <a class="active" href="#">
+            <img src="./assets/icons/home-fi-icon.svg" alt="home-fi-icon">
+            Início
+        </a>
+        <a href="#">
+            <img src="./assets/icons/search-fi-icon.svg" alt="search-fi-icon">
+            Buscar
+        </a>
+        <a href="#">
+            <img src="./assets/icons/tv-faw-icon.svg" alt="tv-faw-icon">
+            Em breve
+        </a>
+        <a href="#">
+            <img src="./assets/icons/download-faw-icon.svg" alt="download-faw-icon">
+            Download
+        </a>
+        <a href="#">
+            <img src="./assets/icons/bars-faw-icon.svg" alt="bars-faw-icon">
+            Mais
+        </a>
+    </nav>
 </div>
 </template>
 
@@ -104,7 +125,7 @@ section.hero {
         position: absolute;
         z-index: 2;
         bottom: 0;
-        background: linear-gradient(0deg, #141414 10%, transparent);
+        background: $gradient;
 
         display: flex;
         flex-direction: column;
@@ -214,6 +235,31 @@ section.hero {
 nav.float {
     width: 100%;
     height: 50px;
-    background: red;
+    background: $darker;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+        width: 50px;
+        height: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+
+        opacity: .5;
+    }
+    a.active {
+        opacity: 1;
+    }
 }
 </style>
