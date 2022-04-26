@@ -237,6 +237,7 @@ nav.float {
     height: 50px;
     background: $darker;
     position: fixed;
+    z-index: 1000;
     bottom: 0;
 
     display: flex;
