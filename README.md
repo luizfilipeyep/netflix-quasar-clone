@@ -1,6 +1,8 @@
-# Quasar App (netflix-quasar-clone)
+# Netflix Clone UI with QUASAR
 
-A Quasar Project
+<div>
+  <img src="https://github.com/luizfilipeyep/netflix-quasar-clone/blob/main/screenshots/Screenshot_1.png">
+</div>
 
 ## Install the dependencies
 ```bash
